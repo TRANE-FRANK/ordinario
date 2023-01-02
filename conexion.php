@@ -24,8 +24,8 @@ else
 
     echo $mysqli->host_info . "\n";
 
-    echo "conexion exitosa";
+    echo "Conexion Exitosa";
 
-    $mysqli->query("insert into usuarios (email, user, namen password) values (".$Email", ".$User", "$Name", "$Pass");")
+    $mysqli->query("insert into usuarios(email, user, namen, password) values(". $Email", ". $User", ". $Name", ". $Pass");")
 }
 ?>
