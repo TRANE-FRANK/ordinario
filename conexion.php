@@ -12,7 +12,7 @@ $Pass = $_POST['FormContraseña'];
 echo $Pass . "\n";
 
 
-$mysqli = new mysqli("localhost", "root", "", "registro");
+$mysqli = new mysqli("localhost", "root", "user", "registro");
 
 if ($mysqli->connect_errno) {
 
@@ -26,6 +26,6 @@ else
 
     echo "conexion exitosa";
 
-    $mysqli->query("insert into usuarios (".$palabra.") values ();")
+    $mysqli->query("insert into usuarios (email, user, namen password) values (".$Email", ".$User", "$Name", "$Pass");")
 }
 ?>
